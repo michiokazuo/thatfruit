@@ -1,0 +1,78 @@
+main#main section#banner .container .row .banner-wp{
+    max-height: 350px;
+    position: relative;
+    overflow: hidden;
+    z-index: 11;
+    margin-top: 10px;
+}
+main#main section#banner .container .row .banner-wp .banner-text{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+}
+main#main section#banner .container .row .banner-wp .banner-text h4{
+    font-size: var(--font-20);
+    color: var(--text-hover);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+main#main section#banner .container .row .banner-wp .banner-text a, main#main section#banner .container .row .banner-wp .banner-text span{
+    text-transform: uppercase;
+    color: var(--text-color2);
+    font-weight: 600;
+    font-size: 10px;
+}
+main#main section#banner .container .row .banner-wp .banner-text a:hover{
+    color: var(--text-hover);
+}
+main#main section#banner .container .row .banner-wp .bor{
+    position: absolute;
+    background-color: var(--bg-color2);
+}
+main#main section#banner .container .row .banner-wp .bor1{
+    left: 0;
+    top: 10px;
+    width: 100%;
+    height: 1px;
+    transform-origin: 50% 50%;
+    transform: scaleX(0);
+    transition: 0.4s;
+}
+main#main section#banner .container .row .banner-wp .bor3{
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 1px;
+    transform-origin: 50% 50%;
+    transform: scaleX(0);
+    transition: 0.4s;
+}
+main#main section#banner .container .row .banner-wp .bor2{
+    left: 10px;
+    top: 0px;
+    width: 1px;
+    height: 100%;
+    transform-origin: 50% 50%;
+    transform: scaleY(0);
+    transition: 0.4s;
+}
+main#main section#banner .container .row .banner-wp .bor4{
+    right: 10px;
+    top: 0px;
+    width: 1px;
+    height: 100%;
+    transform-origin: 50% 50%;
+    transform: scaleY(0);
+    transition: 0.4s;
+}
+main#main section#banner .container .row .banner-wp:hover .banner-bg img{
+    transform: scale(1.2);
+}
+main#main section#banner .container .row .banner-wp:hover .bor1, main#main section#banner .container .row .banner-wp:hover .bor3{
+    transform: scaleX(1);
+}
+main#main section#banner .container .row .banner-wp:hover .bor2, main#main section#banner .container .row .banner-wp:hover .bor4{
+    transform: scaleY(1);
+}

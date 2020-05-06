@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+th,td{border: none!important;}
+tr{border-bottom: 1px dashed var(--secondary);}
+a {
+    text-decoration: none!important;
+}
+
+ul {
+    list-style: none!important;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --text-color1: #000000;
+    --text-color2: #ffffff;
+    --text-hover: #73be47;
+    --body-bgc: #ffffff;
+    --bg-color1: #73be47;
+    --bg-color2: #f5f5f5;
+    --bg-color3: #1e1e1e;
+    --bg-color4: #252932;
+    --font-13: 13px;
+    --font-16: 16px;
+    --font-26: 26px;
+    --font-20: 20px;
+    --font-30: 30px;
+    --font-42: 42px;
+    --color-brown-hover: #f39575;
+    --color-brown: #a1624d;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/*  */
+section.block-login{
+    margin-bottom: 6rem;
+}
+section.block-login .row .body-content .body-form{
+      padding: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid #c0c0c0; 
+}
+section.block-login .row .body-content .title-log{
+    text-transform: uppercase;
+    padding: 50px 0;
+}
+section.block-login .row .body-content .body-form .form-login .form-group label{
+    font-weight: 600;
+}
+section.block-login .row .body-content .body-form .form-login .form-group input{
+    border-radius: 10px;
+}
+section.block-login .row .body-content .body-form .form-login .button-log{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+section.block-login .row .body-content .body-form .form-login .button-log button{
+    background-color: var(--color-brown);
+    color: var(--white);
+}
+section.block-login .row .body-content .body-form .form-login .button-log .remember{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding-left: 2rem;
+}
+section.block-login .row .body-content .body-form .bottom-log{
+    padding: 20px 0;
+}

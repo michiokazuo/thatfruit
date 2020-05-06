@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+ul {
+    list-style: none!important;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --text-color1: #000000;
+    --text-color2: #ffffff;
+    --text-hover: #73be47;
+    --body-bgc: #ffffff;
+    --bg-color1: #73be47;
+    --bg-color2: #f5f5f5;
+    --bg-color3: #1e1e1e;
+    --bg-color4: #252932;
+    --font-13: 13px;
+    --font-16: 16px;
+    --font-26: 26px;
+    --font-20: 20px;
+    --font-30: 30px;
+    --font-42: 42px;
+    --color-brown-hover: #f39575;
+    --color-brown: #a1624d;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/*  */
+main#main section#aboutme-pro .container .row{
+    padding: 20px;
+}
+main#main section#aboutme-pro .container .row .header h3, main#main section#aboutme-fb .container .row .header h3, main#main section#aboutme-dedfar .container .row .header h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--font-30);
+    color: var(--text-color1);
+    padding: 20px;
+    margin-top: 20px;
+}
+main#main section#aboutme-pro .container .row .list-pro{
+    height: 350px;
+    overflow-y: auto;
+}
+main#main section#aboutme-pro .container .row .list-pro::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--body-bgc);
+    border: 1px solid #c0c0c1;
+    border-radius: 10px;
+}
+
+main#main section#aboutme-pro .container .row .list-pro::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color1);
+    width: 9px;
+    border-radius: 9px;  
+}
+
+main#main section#aboutme-pro .container .row .list-pro .pro-item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 0;
+}
+main#main section#aboutme-pro .container .row .list-pro .pro-item .img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border:  1px dashed var(--text-hover);
+    position: relative;
+}
+main#main section#aboutme-pro .container .row .list-pro .pro-item .img::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--green);
+    transform: scale(0);
+    transition: 0.4s;
+}
+main#main section#aboutme-pro .container .row .list-pro .pro-item:hover .img{
+    box-shadow: 0px 3px 7px -1px rgba(0, 0, 0, 0.75);
+    border: none;
+}
+main#main section#aboutme-pro .container .row .list-pro .pro-item .img:hover::before{
+    transform: scale(1);
+}
+main#main section#aboutme-pro .container .row .list-pro .pro-item .img img, main#main section#aboutme-pro .container .row .list-pro .pro-item .img a{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+main#main section#aboutme-pro .container .row .list-pro .pro-item .text{
+    padding-left: 20px;
+}
+main#main section#aboutme-pro .container .row .list-pro .pro-item .text p{
+    font-size: var(--font-16);
+    color: var(--text-color1);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+main#main section#aboutme-pro .container .row .list-pro .pro-item .text span{
+    font-size: var(--font-13);
+    color: var(--gray);
+    max-width: 150px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+/*  */
+main#main section#aboutme-fb .container .row #details ol.carousel-indicators{
+    top: 117px;
+}
+main#main section#aboutme-fb .container .row #details ol.carousel-indicators .active{
+    background-color: var(--text-hover);
+}
+main#main section#aboutme-fb .container .row #details ol.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--text-hover);
+    border-radius: 50%;
+}
+main#main section#aboutme-fb .container .row #details .carousel-inner .carousel-item .row .aboutme__fb-wp{
+    display: flex;
+    justify-content: center;
+}
+main#main section#aboutme-fb .container .row #details .carousel-inner .carousel-item .row .aboutme__fb-wp > div {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: 1px solid #73be47;
+}
+main#main section#aboutme-fb .container .row #details .carousel-inner .carousel-item .row .aboutme__fb-wp > div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: 0.4s;
+    border: 1px solid var(--text-color1);
+}
+main#main section#aboutme-fb .container .row #details .carousel-inner .carousel-item .row .aboutme__fb-wp > div:hover img{
+    transform: scale(0.9);
+}
+main#main section#aboutme-fb .container .row #details .carousel-inner .carousel-item .row .abmefbwp-text p{
+    font-size: var(--font-16);
+    color: var(--gray);
+    margin-bottom: 0;
+    margin-top: 30px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main#main section#aboutme-fb .container .row #details .carousel-inner .carousel-item .row .abmefbwp-text .ver{
+    width: 2px;
+    height: 25px;
+    background-color: var(--text-hover);
+    display: block;
+    margin: auto;
+}
+main#main section#aboutme-fb .container .row #details .carousel-inner .carousel-item .row .abmefbwp-text .fb-name{
+    font-size: var(--font-20);
+    color: var(--text-color1);
+    font-weight: 700;
+    cursor: pointer;
+}
+main#main section#aboutme-fb .container .row #details .carousel-inner .carousel-item .row .abmefbwp-text .our{
+    font-size: var(--font-16);
+    color: var(--color-brown);
+    font-weight: 600;
+}
+/*  */
+main#main section#aboutme-dedfar .container .row .abmdf__wp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .img img{
+    cursor: pointer;
+    transition: 0.4s;
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .img:hover img{
+    transform: scale(1.2);
+    z-index: 11;
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .text{
+    padding: 10px 20px;
+    border: 2px solid var(--text-hover);
+    margin-left: 20px;
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .text > span{
+    display: block;
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .text > span.abmdt-name{
+    font-size: var(--font-20);
+    color: var(--text-color1);
+    font-weight: 700;
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .text > span.abmdt-name:hover{
+    color: var(--success);
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .text > span.abmdt-decs{
+    font-size: var(--font-13);
+    color: var(--color-brown);
+    padding: 5px 0 10px 0;
+    border-bottom: 1px dashed var(--success);
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .text > p{
+    font-size: 14px;
+    color: var(--gray);
+    padding: 10px 0;
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .text > .abmdt-icon > a{
+    margin-right: 5px;
+    display: inline-block;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+main#main section#aboutme-dedfar .container .row .abmdf__wp .text > .abmdt-icon > a:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+}
+main#main section#aboutme-dedfar .container .row #farmer .carousel-control-prev , main#main section#aboutme-dedfar .container .row #farmer .carousel-control-next{
+    width: 5%;
+    color: var(--gray);
+}
+main#main section#aboutme-dedfar .container .row #farmer .carousel-control-prev > span , main#main section#aboutme-dedfar .container .row #farmer .carousel-control-next >span{
+    background-image: unset;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--gray);
+}
+main#main section#aboutme-dedfar .container .row #farmer .carousel-control-prev > span:hover, main#main section#aboutme-dedfar .container .row #farmer .carousel-control-next >span:hover{
+   background-color: var(--green);
+}
+main#main section#aboutme-dedfar .container .row #farmer .carousel-control-prev > span:hover i, main#main section#aboutme-dedfar .container .row #farmer .carousel-control-next >span:hover i{
+    color: var(--light);
+}

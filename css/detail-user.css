@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+th,td{border: none!important;}
+tr{border-bottom: 1px dashed var(--secondary);}
+a {
+    text-decoration: none!important;
+}
+
+ul {
+    list-style: none!important;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --text-color1: #000000;
+    --text-color2: #ffffff;
+    --text-hover: #73be47;
+    --body-bgc: #ffffff;
+    --bg-color1: #73be47;
+    --bg-color2: #f5f5f5;
+    --bg-color3: #1e1e1e;
+    --bg-color4: #252932;
+    --font-13: 13px;
+    --font-16: 16px;
+    --font-26: 26px;
+    --font-20: 20px;
+    --font-30: 30px;
+    --font-42: 42px;
+    --color-brown-hover: #f39575;
+    --color-brown: #a1624d;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+main#main section#infor{
+    padding: 30px 0;
+}
+main#main section#infor .container .row #userinfo{
+    padding: 30px 0;
+}
+main#main section#infor .container .row #userinfo .userinfo-wp{
+    padding: 1rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+}
+main#main section#infor .container .row #userinfo .userinfo-wp .usif-a span{
+    padding: 15px;
+    font-size: var(--font-26);
+    color: var(--text-color1);
+    font-weight: 600;
+}
+main#main section#infor .container .row #userinfo .userinfo-wp .usif-if{
+    padding: 10px 0;
+}
+main#main section#infor .container .row #userinfo .userinfo-wp .usif-if .us2if-wp span{
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+main#main section#infor .container .row #userinfo .userinfo-wp .usif-if .us2if-wp input{
+    width: 100%;
+    outline: none;
+    padding: 2px 5px;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    font-size: 14px;
+}
+main#main section#infor .container .row #cartdetail .table thead tr, main#main section#infor .container .row #cartdetail .table thead tr th{
+    vertical-align: middle;
+    text-align: center;
+}
+main#main section#infor .container .row #cartdetail .table thead tr th{
+    text-transform: uppercase;
+    min-width: 100px;
+}
+main#main section#infor .container .row #cartdetail .table tbody tr td{
+    text-align: center;
+    font-weight: 600;
+    vertical-align: middle;
+    font-size: 14px;
+}
+main#main section#infor .container .row #cartdetail .table tbody tr td img{
+    width: 50px;
+    height: 50px;
+}
+main#main section#infor .container .row #cartdetail .table tbody tr td .cidoa{
+    width: fit-content;
+    border: 1px solid #8a8a8a;
+    padding: 2px 5px;
+    color: #8a8a8a;
+    border-radius: 5px;
+}
+main#main section#infor .container .row #cartdetail .table tbody tr td .cidoa input{
+    padding: 0 10px;
+    display: inline-flex;
+    width: 50px;
+    text-align: center;
+    border: none;
+}
+main#main section#infor .container .row #cartdetail .table tbody tr td .cidoa i{
+    cursor: pointer;
+}
+main#main section#infor .container .row #cartdetail .table tbody tr td .cidoa i:hover{
+    color: var(--text-color1);
+}
+main#main section#infor .container .row .sumM .cor-wp .table tbody tr{
+    border: 1px solid #c0c0c0;
+}
+main#main section#infor .container .row .sumM .cor-wp button#submit-infor{
+    background-color: var(--color-brown);
+    color: white;
+    font-size: 14px;
+}

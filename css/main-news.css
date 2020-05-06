@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+ul {
+    list-style: none!important;
+}
+
+:root {
+    --text-color1: #000000;
+    --text-color2: #ffffff;
+    --text-hover: #73be47;
+    --body-bgc: #ffffff;
+    --bg-color1: #73be47;
+    --bg-color2: #f5f5f5;
+    --bg-color3: #1e1e1e;
+    --bg-color4: #252932;
+    --font-13: 13px;
+    --font-16: 16px;
+    --font-26: 26px;
+    --font-20: 20px;
+    --font-30: 30px;
+    --font-42: 42px;
+    --color-brown-hover: #f39575;
+    --color-brown: #a1624d;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*  */
+main#main section#newspage .container .row > div .np__wapper{
+    padding: 30px 0;
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-img{
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-img img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-img:hover img{
+    transform: scale(1.2);
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-img a{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 11px;
+    color: var(--text-color2);
+    font-weight: 600;
+    background-color: #5c5353;
+    padding: 2px;
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-img a:hover{
+    color: var(--success);
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-text span{
+    display: block;
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-text > span{
+    font-size: var(--font-16);
+    padding-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-text time span{
+    color: var(--color-brown);
+    cursor: pointer;
+    font-size: var(--font-13);
+    margin-bottom: 15px;
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-text > p{
+    font-size: var(--font-13);
+    color: grey;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-text > a{
+    border-radius: 10px;
+    font-size: var(--font-13);
+    background-color: var(--color-brown);
+    text-transform: capitalize;
+    color: var(--white);
+}
+main#main section#newspage .container .row > div .np__wapper .npwp-text > a:hover{
+    background-color: var(--color-brown-hover);
+}
+/*  */
+.page-link{
+    color: var(--text-hover);
+}
+.page-link:hover{
+    color: var(--success);
+}
+.page-item.active .page-link{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+}
